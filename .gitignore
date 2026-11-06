@@ -1,0 +1,39 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+venv/
+.venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Audio uploads and generated files
+backend/uploads/
+uploads/
+
+# Node dependencies and build output
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+
+# Logs and temporary files
+*.log
+*.swp
+*.swo
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store

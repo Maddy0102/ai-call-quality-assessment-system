@@ -1,0 +1,104 @@
+
+{
+  "checklist_id": "sales_call_v1",
+  "checklist_name": "Sales Executive Call Quality Checklist",
+  "version": "1.0",
+  "language_support": [
+    "English",
+    "Tamil",
+    "Kannada"
+  ],
+  "evaluation_rules": {
+    "possible_results": [
+      "YES",
+      "NO",
+      "PARTIAL",
+      "NOT_CLEAR"
+    ],
+    "require_transcript_evidence": true,
+    "require_timestamp": true,
+    "ignore_unrelated_conversation": true,
+    "do_not_assume_missing_information": true,
+    "unreliable_transcript_requires_review": true
+  },
+  "categories": [
+    {
+      "category_id": "introduction",
+      "category_name": "Introduction",
+      "questions": [
+        {
+          "id": "Q001",
+          "question": "Did the executive introduce themselves?",
+          "expected_behavior": "Executive clearly communicates their name and professional identity.",
+          "weight": 10
+        },
+        {
+          "id": "Q002",
+          "question": "Did the executive identify their organization?",
+          "expected_behavior": "Executive mentions the company or organization they represent.",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "category_id": "requirement_analysis",
+      "category_name": "Customer Requirement Analysis",
+      "questions": [
+        {
+          "id": "Q003",
+          "question": "Did the executive understand the customer's requirements?",
+          "expected_behavior": "Executive asks relevant questions and understands the customer's needs.",
+          "weight": 15
+        },
+        {
+          "id": "Q004",
+          "question": "Did the executive ask about the customer's budget?",
+          "expected_behavior": "Executive asks about or confirms the customer's budget.",
+          "weight": 10
+        },
+        {
+          "id": "Q005",
+          "question": "Did the executive understand the customer's preferred location?",
+          "expected_behavior": "Executive asks about or confirms the preferred location.",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "category_id": "product_explanation",
+      "category_name": "Product Explanation",
+      "questions": [
+        {
+          "id": "Q006",
+          "question": "Did the executive explain relevant product details?",
+          "expected_behavior": "Executive explains product features relevant to the customer's requirements.",
+          "weight": 15
+        },
+        {
+          "id": "Q007",
+          "question": "Did the executive explain the next steps?",
+          "expected_behavior": "Executive communicates what will happen after the call.",
+          "weight": 10
+        }
+      ]
+    },
+    {
+      "category_id": "communication",
+      "category_name": "Communication and Closing",
+      "questions": [
+        {
+          "id": "Q008",
+          "question": "Did the executive communicate professionally?",
+          "expected_behavior": "Executive uses respectful and professional language throughout the call.",
+          "weight": 10
+        },
+        {
+          "id": "Q009",
+          "question": "Did the executive close the conversation professionally?",
+          "expected_behavior": "Executive ends the call politely and appropriately.",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

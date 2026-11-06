@@ -1,0 +1,76 @@
+
+{
+  "checklist_id": "digilogy_call_v1",
+  "checklist_name": "Digilogy Client Conversation Checklist",
+  "version": "1.0",
+  "language_support": [
+    "English",
+    "Tamil",
+    "Kannada",
+    "Tamil-English",
+    "Kannada-English"
+  ],
+  "evaluation_rules": {
+    "possible_results": [
+      "YES",
+      "NO",
+      "PARTIAL",
+      "NOT_CLEAR"
+    ],
+    "require_transcript_evidence": true,
+    "require_timestamp": false,
+    "ignore_unrelated_conversation": true,
+    "do_not_assume_missing_information": true,
+    "unreliable_transcript_requires_review": true
+  },
+  "categories": [
+    {
+      "category_id": "call_opening",
+      "category_name": "Professional Call Opening",
+      "questions": [
+        {
+          "id": "Q001",
+          "question": "Did the executive introduce himself and the organization by saying Vanakkam in a professional manner?",
+          "expected_behavior": "The executive should greet the customer using Vanakkam, introduce themselves, and identify the organization professionally.",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "category_id": "call_closing",
+      "category_name": "Professional Call Closing",
+      "questions": [
+        {
+          "id": "Q002",
+          "question": "Did the executive thank and wish the customer a great day before disconnecting the call?",
+          "expected_behavior": "The executive should thank the customer and wish them a great day before ending the conversation.",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "category_id": "prospect_identification",
+      "category_name": "Prospect Identification",
+      "questions": [
+        {
+          "id": "Q003",
+          "question": "Did the executive confirm the prospect's name?",
+          "expected_behavior": "The executive should explicitly ask for or confirm the prospect's name. A name mentioned only by the customer is not sufficient proof of confirmation.",
+          "weight": 25
+        }
+      ]
+    },
+    {
+      "category_id": "requirement_probing",
+      "category_name": "Requirement Probing",
+      "questions": [
+        {
+          "id": "Q004",
+          "question": "Did the executive probe the prospect before presenting the product?",
+          "expected_behavior": "Before presenting the product, the executive should ask relevant questions to understand the prospect's needs, preferences, requirements, or budget.",
+          "weight": 25
+        }
+      ]
+    }
+  ]
+}

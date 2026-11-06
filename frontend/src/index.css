@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, "Noto Sans Tamil", "Noto Sans Tamil Supplement", sans-serif;
+  background: #0b1020;
+  color: #f8fafc;
+}
